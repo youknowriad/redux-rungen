@@ -17,7 +17,7 @@
     "redux": "^3.5.2",
     "rimraf": "^2.5.1"
   },
-  "dependencies": {
+  "peerDependencies": {
     "rungen": "^0.2.0"
   },
   "scripts": {
