@@ -9,10 +9,15 @@ const middleware = store => {
     ...wrapControls,
     ...createControls(store.dispatch, store.getState)
   ])
-  
+
+  const runtimeReturningPromise = input =>
+    new Promise((resolve, reject) =>
+      runtime(input, resolve, reject)
+    )
+
   return next => action =>
     is.iterator(action) ?
-      runtime(action) :
+      runtimeReturningPromise(action) :
       next(action)
 }
 
