@@ -15,7 +15,8 @@
     "expect": "^1.13.4",
     "mocha": "^2.4.5",
     "redux": "^3.5.2",
-    "rimraf": "^2.5.1"
+    "rimraf": "^2.5.1",
+    "rungen": "^0.3.0"
   },
   "peerDependencies": {
     "rungen": "^0.3.0"
