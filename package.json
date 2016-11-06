@@ -19,7 +19,7 @@
     "rungen": "^0.3.0"
   },
   "peerDependencies": {
-    "rungen": "^0.3.0"
+    "rungen": "^0.3.2"
   },
   "scripts": {
     "lint": "eslint src",

@@ -1,7 +1,7 @@
 import keys from './keys'
 
 const is = {
-  obj      : value => typeof value === 'object',
+  obj      : value => typeof value === 'object' && !! value,
   func     : value => typeof value === 'function',
   select   : value => is.obj(value) && value.type === keys.select,
   put      : value => is.obj(value) && value.type === keys.put,
